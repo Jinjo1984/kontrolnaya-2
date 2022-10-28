@@ -32,7 +32,7 @@
                             <TextBlock x:Name="textBlock1zad" TextWrapping="Wrap" Text="" Grid.Column="1" HorizontalAlignment="Center" Height="179" Width="359" VerticalAlignment="Center" FontSize="18" />
                         </Border>
                     </StackPanel>
-                    <Button x:Name="button2zad2" Content="Замена" Margin="84,190,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="246"  Grid.RowSpan="2"/>
+                    <Button x:Name="button2zad2" Content="Замена" Margin="84,190,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="246"  Grid.RowSpan="2" Click="button2zad2_Click"/>
 
                 </Grid>
             </TabItem>

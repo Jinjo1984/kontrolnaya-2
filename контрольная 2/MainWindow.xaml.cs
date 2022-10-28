@@ -27,14 +27,36 @@ namespace контрольная_2
         {
             InitializeComponent();
         }
-        
 
+
+        
         private void button1Zad_Click(object sender, RoutedEventArgs e)
         {
             int lenght = Convert.ToInt32(Interaction.InputBox("Введите длину массива"));
             string[] Mass = new string[lenght];
             Mass = utilites.completeMass(lenght);
+            textBlock1zad.Text = "Собираю массив: ";
+            foreach (string s in Mass)
+            {
+                textBlock1zad.Text += s;
+            }
             string Repeat = utilites.RepeatingChar(Mass);
+            textBlock1zad.Text += "\nБольше всего вхождений у символа: " + Repeat;
+        }
+
+        private void button2zad2_Click(object sender, RoutedEventArgs e)
+        {
+            int lenght = Convert.ToInt32(Interaction.InputBox("Введите длину массива"));
+            string[] str = utilites.completeMass(lenght);
+            int k = 0;
+           foreach(string ir in str)
+            {
+                textBlock1zad.Text += ir;
+            }
+            string DelStr = Interaction.InputBox("Введите символы которые нужно удалить");
+            str = utilites.DeleteChar(str,DelStr);
+            textBlock1zad.Text += "\n";
+            textBlock1zad.Text = utilites.CharackterInTextBox(str, textBlock1zad.Text);
         }
     }
 }

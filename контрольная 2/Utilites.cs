@@ -4,6 +4,7 @@ using System.Linq;
 using System.Reflection.Metadata;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
 using System.Windows.Input.StylusPlugIns;
 using Microsoft.VisualBasic;
 namespace контрольная_2
@@ -22,7 +23,7 @@ namespace контрольная_2
             }
             return str;
         }
-        public string RepeatingChar(string[] chars)
+        public string RepeatingChar(string[] chars)//находит самый используемый символ в строке
         {
             
             var count = 0;//количесвто повторов
@@ -39,5 +40,32 @@ namespace контрольная_2
          
             return chars[index]; //возвращает самое повторяющиеся число 
         }
+        public string[] DeleteChar( string[] Mass, string charDel)// удаляет символ с шагом через два
+        {
+            int k = 0;
+            for (int i = 0; i < Mass.Length; i++)
+            {
+                if (charDel == Mass[i])
+                {
+                    k++;
+                    if (k % 2 == 0)
+                    {
+                        Mass[i] = "";
+                    }
+                }
+
+            }
+            return Mass;
+        }
+        public string CharackterInTextBox(string[] str,string textBox)//метод для вывода символов с массива в TextBox
+        {
+            foreach(string item in str)
+            {
+                textBox += item;
+            }
+            return textBox;
+        }
+
+       
     }
 }
