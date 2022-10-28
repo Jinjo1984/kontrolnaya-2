@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:контрольная_2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Контрольная работа" Height="450" Width="800">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition />
@@ -16,7 +16,7 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <TabControl x:Name="tabControl" Grid.ColumnSpan="2" Grid.RowSpan="2">
-            <TabItem Header="1 задание">
+            <TabItem Header="Контрольная">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition />
