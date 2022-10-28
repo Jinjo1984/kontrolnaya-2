@@ -65,7 +65,6 @@ namespace контрольная_2
             }
             return textBox;
         }
-
        
     }
 }
