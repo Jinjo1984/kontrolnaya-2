@@ -10,10 +10,7 @@ using Microsoft.VisualBasic;
 namespace контрольная_2
 {
     internal class Utilites
-    {
-        
-        
-
+    { 
         public string[] completeMass(int lenght)//заполнение массива длиной lenght 
         {
             string[] str = new string[lenght];
