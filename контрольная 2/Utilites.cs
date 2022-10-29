@@ -11,7 +11,7 @@ namespace контрольная_2
 {
     internal class Utilites
     {
-        // Microsoft.VisualBasic.Interaction.InputBox(""); 
+        
         
 
         public string[] completeMass(int lenght)//заполнение массива длиной lenght 
